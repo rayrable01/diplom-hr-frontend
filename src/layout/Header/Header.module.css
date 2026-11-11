@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background-color: var(--headerBg);
+  border-bottom: 1px solid var(--controlBorder);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  gap: 25px;
+}

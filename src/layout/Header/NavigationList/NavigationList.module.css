@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.skeletonItem {
+  display: flex;
+  align-items: center;
+}

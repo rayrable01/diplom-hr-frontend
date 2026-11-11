@@ -1,0 +1,26 @@
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  outline-offset: 4px;
+}
+
+.logoLink:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+.logoLink:focus-visible {
+  outline: 2px solid var(--primary);
+  border-radius: 50%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
