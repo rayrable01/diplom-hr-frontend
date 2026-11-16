@@ -1,0 +1,203 @@
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+  flex-shrink: 0;
+  background-color: var(--contentBg);
+  border: 1px solid var(--controlBorder);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.resetButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.resetButton:hover {
+  opacity: 0.8;
+}
+
+.resetIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  background-color: var(--contentBg);
+  border: 1px solid var(--controlBorder);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: var(--textMuted);
+}
+
+.input:focus {
+  border-color: #2563eb;
+}
+
+.inputWithIconRight {
+  padding-right: 36px;
+}
+
+.inputWithIconLeft {
+  padding-left: 36px;
+}
+
+.iconRight {
+  position: absolute;
+  right: 12px;
+  color: var(--textMuted);
+  pointer-events: none;
+}
+
+.iconLeft {
+  position: absolute;
+  left: 12px;
+  color: var(--textMuted);
+  pointer-events: none;
+}
+
+.selectButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  background-color: var(--contentBg);
+  border: 1px solid var(--controlBorder);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.2s ease;
+}
+
+.selectButton:hover {
+  border-color: var(--textMuted);
+}
+
+.selectButtonContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selectPlaceholder {
+  color: var(--textMuted);
+}
+
+.checkboxList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.salaryRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.salaryInputWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.currencyBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 40px;
+  color: var(--textMuted);
+  font-size: 14px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.applyButton {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.applyButton:hover {
+  background-color: #1d4ed8;
+}

@@ -1,0 +1,87 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--textMuted);
+  margin: 0;
+}
+
+.promoCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: rgb(37 99 235 / 5%);
+  border: 1px solid rgb(37 99 235 / 15%);
+  border-radius: 16px;
+  padding: 14px 20px;
+  flex-shrink: 0;
+}
+
+.promoIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #2563eb;
+  color: #fff;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.promoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.promoTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.promoSubtitle {
+  font-size: 12px;
+  color: var(--textMuted);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.promoButton {
+  margin-left: 8px;
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.promoButton:hover {
+  background-color: #1d4ed8;
+}

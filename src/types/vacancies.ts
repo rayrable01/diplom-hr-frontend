@@ -4,6 +4,7 @@ export const vacancySchema = z.object({
   id: z.string(),
   creatorId: z.string(),
   title: z.string(),
+  company: z.string(),
   description: z.string(),
   requiredExperienceInYears: z.number(),
   requiredSkills: z.array(z.string()),
@@ -18,6 +19,7 @@ export const vacancyResponseSchema = z.array(vacancySchema);
 export const createVacancyRequestSchema = z.object({
   title: z.string(),
   description: z.string(),
+  company: z.string(),
   requiredExperienceYears: z.number(),
   requiredSkills: z.array(z.string()),
   salaryMin: z.number(),
@@ -29,6 +31,7 @@ export const createVacancyResponseSchema = z.object({
   id: z.number(),
   creatorId: z.number(),
   title: z.string(),
+  company: z.string(),
   description: z.string(),
   requiredExperienceYears: z.number(),
   requiredSkills: z.array(z.string()),

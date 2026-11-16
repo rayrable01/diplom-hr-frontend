@@ -1,3 +1,121 @@
+.section {
+  width: 100%;
+}
+
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--textMuted);
+  margin: 0;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.panelCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background-color: var(--contentBg);
+  border: 1px solid var(--controlBorder);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 4%);
+}
+
+.panelTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.funnelList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.funnelStep {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stepHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.stepBarBg {
+  width: 100%;
+  height: 8px;
+  background-color: var(--controlBg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stepBarFill {
+  height: 100%;
+  background-color: #2563eb;
+  border-radius: 4px;
+}
+
+.skillsRatingList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skillRatingItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background-color: var(--controlBg);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.skillName {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.skillScore {
+  color: #2563eb;
+  font-weight: 700;
 }

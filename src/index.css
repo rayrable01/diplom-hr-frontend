@@ -13,10 +13,12 @@
   --textMuted: #64748b;
   --controlBg: #f1f5f9;
   --controlBorder: #cbd5e1;
-  --primary: #3b82f6;
-  --primaryHover: #2563eb;
   --headerBg: #000;
   --headerText: #fff;
+  --submitButtonBg: #000;
+  --submitButtonHover: #272525;
+  --errorTextColor: #ef4444;
+  --errorBg: rgb(179, 5, 5);
 }
 
 :root[data-theme='dark'] {
@@ -63,4 +65,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+button,
+a {
+  cursor: pointer;
 }

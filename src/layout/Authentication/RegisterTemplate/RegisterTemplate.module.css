@@ -1,0 +1,136 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.roleSwitcher {
+  display: flex;
+  background-color: var(--controlBg);
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.roleButton {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--textMuted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roleButton:hover {
+  color: var(--text);
+}
+
+.roleButtonActive {
+  background-color: var(--contentBg);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+}
+
+.namesRow {
+  display: flex;
+  gap: 12px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--controlBorder);
+  background-color: var(--contentBg);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: var(--textMuted);
+}
+
+.input:focus {
+  border-color: var(--text);
+}
+
+.inputError {
+  border-color: var(--errorTextColor);
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: var(--errorTextColor);
+}
+
+.serverError {
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: color-mix(in srgb, var(--errorTextColor) 10%, transparent);
+  color: var(--errorTextColor);
+  font-size: 13px;
+  text-align: center;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--submitButtonBg);
+  color: var(--headerText);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 4px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--submitButtonHover);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--textMuted);
+  margin-top: 4px;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.linkButton:hover {
+  color: var(--textMuted);
+}

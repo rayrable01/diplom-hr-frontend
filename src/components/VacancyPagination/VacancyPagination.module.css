@@ -1,0 +1,98 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.counter {
+  font-size: 13px;
+  color: var(--textMuted);
+}
+
+.pagesList {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pageButton:hover:not(.pageButtonActive) {
+  background-color: var(--controlBg);
+}
+
+.pageButtonActive {
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 36px;
+  color: var(--textMuted);
+  font-size: 14px;
+}
+
+.nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--controlBorder);
+  background: var(--contentBg);
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.nextButton:hover {
+  background-color: var(--controlBg);
+  border-color: var(--textMuted);
+}
+
+.perPageSelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--textMuted);
+}
+
+.perPageButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  background-color: var(--contentBg);
+  border: 1px solid var(--controlBorder);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  transition: border-color 0.2s ease;
+}
+
+.perPageButton:hover {
+  border-color: var(--textMuted);
+}

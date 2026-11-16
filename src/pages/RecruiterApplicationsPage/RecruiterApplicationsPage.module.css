@@ -1,3 +1,88 @@
+.section {
+  width: 100%;
+}
+
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--textMuted);
+  margin: 0;
+}
+
+.tabsList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--controlBorder);
+  padding-bottom: 12px;
+}
+
+.tabButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--textMuted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  color: var(--text);
+  background-color: var(--controlBg);
+}
+
+.tabButtonActive {
+  background-color: rgb(37 99 235 / 10%);
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgb(37 99 235 / 15%);
+  color: #2563eb;
+}
+
+.badgeInactive {
+  background-color: var(--controlBg);
+  color: var(--textMuted);
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }

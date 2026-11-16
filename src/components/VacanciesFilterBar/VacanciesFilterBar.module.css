@@ -1,0 +1,73 @@
+.filterBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.tabsList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--textMuted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  color: var(--text);
+  background-color: var(--controlBg);
+}
+
+.tabButtonActive {
+  background-color: rgb(37 99 235 / 10%);
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgb(37 99 235 / 15%);
+  color: #2563eb;
+}
+
+.badgeInactive {
+  background-color: var(--controlBg);
+  color: var(--textMuted);
+}
+
+.sortButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.sortButton:hover {
+  background-color: var(--controlBg);
+}

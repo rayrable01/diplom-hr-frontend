@@ -29,7 +29,7 @@
   margin-bottom: 20px;
   border-radius: 50%;
   background-color: var(--controlBg);
-  color: var(--primary);
+  color: var(--text);
 }
 
 .title {
@@ -51,8 +51,8 @@
   align-items: center;
   justify-content: center;
   padding: 10px 22px;
-  background-color: var(--primary);
-  color: #fff;
+  background-color: var(--submitButtonBg);
+  color: var(--headerText);
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
@@ -60,5 +60,5 @@
 }
 
 .actionButton:hover {
-  background-color: var(--primaryHover);
+  background-color: var(--submitButtonHover);
 }

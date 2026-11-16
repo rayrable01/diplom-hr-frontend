@@ -1,3 +1,53 @@
+.section {
+  width: 100%;
+}
+
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--textMuted);
+  margin: 0;
+}
+
+.createButton {
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.createButton:hover {
+  background-color: #1d4ed8;
 }

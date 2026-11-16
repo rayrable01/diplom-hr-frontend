@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
-import { useGetMeQuery } from '@/api/serviceApi/auth';
+import { useGetMeQuery } from '@/api/auth';
 import { PageSkeleton } from '@/ui/Skeleton/PageSkeleton';
 import { AccessDenied } from '@/components/AccessDenied/AccessDenied';
 import type { Role } from '@/types/types';

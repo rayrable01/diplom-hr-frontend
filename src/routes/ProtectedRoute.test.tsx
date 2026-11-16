@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { ProtectedRoute } from './ProtectedRoute';
-import * as authApiModule from '@/api/serviceApi/auth';
+import * as authApiModule from '@/api/auth';
 
-vi.mock('@/api/serviceApi/auth', () => ({
+vi.mock('@/api/auth', () => ({
   useGetMeQuery: vi.fn(),
 }));
 
